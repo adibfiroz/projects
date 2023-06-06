@@ -1,0 +1,82 @@
+.home {
+    text-align: center;
+    display: flex;
+
+  
+    .title2 {
+        color: #00257b;
+    }
+    .homeContainer {
+        height: 100vh;
+        background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/24ed9392232693.5e45b4885aef5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex: 6;
+        background-position: right;
+
+        .navbar {
+            border-bottom: 0;
+            color: #fff;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 80px;
+            align-items: center;
+            margin-top: 9%;
+
+            .box {
+                background-color: #fff;
+                border-radius: 10px;
+                padding: 10px;
+                width: 300px;
+                height: fit-content;
+
+                span {
+                    color: gray;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+
+                .count {
+                    font-size: 25px;
+                    color: #0446ab;
+                    margin: 20px 0;
+                    font-weight: bold;
+                }
+
+                .dFlex {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .seeAll {
+                        font-size: 14px;
+                        color: #000;
+                        text-decoration: underline;
+                    }
+
+                    .userIcon {
+                        background-color: lightpink;
+                        padding: 3px 5px;
+                        border-radius: 5px;
+
+                        .Icon {
+                            color: red;
+                        }
+                       
+                    }
+
+                    .softIcon {
+                        background-color: rgba(128, 0, 128, 0.2);
+                        padding: 3px 5px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+
+    }
+}

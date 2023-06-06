@@ -1,0 +1,12 @@
+.list {
+    text-align: center;
+    display: flex;
+
+    .listContainer {
+        flex: 6;
+
+        .navbar {
+            color: #000;
+        }
+    }
+}
