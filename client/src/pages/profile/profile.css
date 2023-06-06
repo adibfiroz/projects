@@ -1,0 +1,322 @@
+.profile .container, .EditProfile .container, .SoftwareSaved .container {
+    position: relative;
+}
+
+.reviewpage {
+    margin: 30px 0;
+}
+
+.profile .breadcrumb, .EditProfile .breadcrumb, .SoftwareSaved .breadcrumb {
+    padding: 0;
+}
+
+.userImage img {
+    width: 120px;
+    height: 120px;
+    border: solid 6px #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+    background: #fff;
+    object-fit: cover;
+}
+
+.userImage {
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+.photoposi {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background-color: #1859B4;
+    padding: 6px 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 4px solid #fff;
+}
+
+.photoposi .addphoto {
+    color: #e0e1e2;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.profileHeader {
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 18%);
+    padding: 12px;
+    position: sticky;
+    top: 0px;
+    background: #fff;
+    z-index: 100;
+}
+
+.profileHeader .dFlex {
+    justify-content: center;
+    gap: 15px;
+}
+
+.navLinks {
+    border: 1px solid #1859B4;
+    color: #1859B4;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.navLinks:hover {
+    background: linear-gradient(to right, #1859B4 0%, #0467F1 100%);
+    color: #fff;
+}
+
+.navLinks.active{
+    background: linear-gradient(to right, #1859B4 0%, #0467F1 100%);
+    position: relative;
+    color: #fff;
+    border: 1px solid #1859B4;
+
+}
+
+.lBio, .reviewSidebar {
+    width: 25%;
+}
+
+.reviews {
+    width: 50%;
+}
+
+.bioTitle {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgba(36, 44, 67, 0.7);
+}
+
+.userInfo::placeholder {
+    color: #000;
+}
+
+.userInfo {
+    background-color: transparent;
+    padding: 10px 0;
+    color: #000;
+    border: 0;
+    border-bottom: 1px solid rgba(36, 44, 67, 0.3);
+    width: 100%;
+    margin-bottom: 15px;
+    pointer-events: none;
+}
+
+.reviews h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sidebarBox {
+    border: 1px solid #e0e1e2;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.sidebarBox h3 {
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid  #e0e1e2;
+}
+
+.sidebarBox .sFlex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sidebarBox .sFlex a {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: #000;
+    font-size: 14px;
+}
+
+.editForm h2 {
+    color: #000;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.editForm  {
+    background-color: #efefef;
+    padding: 30px 0;
+}
+
+.lEditUser {
+    flex: 1;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 18%);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    align-self: flex-start;
+}
+
+.lEditUser img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.rEdit {
+    flex: 3;
+}
+
+.lEditUser .userName {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.address {
+    color: #9ea7b1;
+    margin-top: 5px;
+}
+
+.editInputs {
+    border: 0;
+    flex: 1;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    border-left: 4px solid #1859B4;
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px, rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+}
+
+
+.editInputs::-webkit-outer-spin-button,
+.editInputs::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.rEdit .dFlex {
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.rEdit .updateBtn {
+    background: linear-gradient(to right, #1859B4 0%, #0467F1 100%);
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0px 20px;
+    margin-top: 30px;
+    border: none;
+    height: 56px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.savedbox {
+    padding: 30px 0;
+}
+
+.savedSoft {
+    flex: 1;
+}
+
+.savedSoft h2 {
+    color: #000;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.settings {
+    border: 1px solid #1859B4;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+}
+
+.settIcons svg {
+    padding: 2px 5px;
+    vertical-align: middle;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.settIcons svg:hover {
+    background-color: #efefef;
+}
+
+.settings a:first-child .settIcons svg {
+    color: red;
+}
+
+.settings .settIcons:last-child svg {
+    color: #7d848b;
+}
+
+
+@media (max-width:900px) {
+    .profileHeader {
+        overflow: scroll;
+        top: 58px;
+        z-index: 6;
+    }
+    .profileHeader .dFlex {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .navLinks {
+        white-space: nowrap;
+    }
+    .profile .breadcrumb, .EditProfile .breadcrumb, .SoftwareSaved .breadcrumb {
+        padding: 0 20px;
+    }
+    .userImage img {
+        width: 90px;
+        height: 90px;
+    }
+    .photoposi .addphoto {
+        font-size: 20px;
+    }
+    .photoposi {
+        bottom: 5px;
+        left: 0px;
+        padding: 6px 8px;
+    }
+    .userImage {
+        right: 20px;
+        top: 50px;
+    }
+    .profile .listTitle, .EditProfile .listTitle, .SoftwareSaved .listTitle {
+       text-align: left;
+       padding-right: 35%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .sidebarBox .dFlex{
+        flex-direction: row;
+    }
+    .editForm .dFlex {
+        flex-direction: column;
+    }
+    .editForm {
+        padding: 20px;
+    }
+    .lEditUser {
+        align-self: auto;
+    }
+    .userProfile .listContainer {
+        display: block;
+    }
+    .userProfile .listTitle {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+}

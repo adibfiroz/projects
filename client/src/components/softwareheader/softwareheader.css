@@ -1,0 +1,131 @@
+.SoftwareHeader {
+    background-color: rgba(0,90,180,.04);
+    padding: 30px 20px;
+    border: solid 0.5px rgba(0,90,180,.5);
+    border-left: 0;
+    border-right: 0;
+}
+
+.contianer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.SoftwareHeader .dFlex {
+    align-items: center;
+}
+
+.rHeader .dFlex {
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.lHeader img {
+    width: 150px;
+    height: 150px;
+    border: solid 0.5px rgba(0,90,180,.5);
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.softTile {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    position: absolute;
+    top: 5px;
+    left: 184px;
+}
+
+.rHeader {
+    margin-top: 50px;
+}
+
+.rHeader .starunfill {
+    color: #dbdbdb;
+    font-size: 35px;
+}
+
+.rHeader .starIcon {
+    font-size: 35px;
+}
+
+.rHeader .starCount {
+    color: #f5a100;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.writeButton .writeText {
+    background: linear-gradient(to right, #1859B4 0%, #0467F1 100%);
+    position: relative;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.saveSoft {
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    padding: 8px;       
+    width: 25px;       
+    cursor: pointer;
+}
+
+.writeButton {
+    flex: 1;
+    text-align: right;
+}
+
+@media (max-width:900px) { 
+
+    .SoftwareHeader .dFlex {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .softTile {
+        position: absolute;
+        font-size: 25px;
+        left: 110px;
+        top: 0;
+        right: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .lHeader {
+        display: flex;
+        gap: 20px;        
+    }
+    .lHeader img {
+        width: 90px;
+        height: 90px;
+    }
+    .rHeader {
+        margin-top: 0px;
+    }
+    .saveSoft {
+        position: absolute;
+        top: 45px;
+        left: 110px;
+    }
+    .rHeader .starIcon {
+        margin-top: 0;
+        font-size: 30px;
+    }
+    .rHeader .starunfill {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .writeButton, .writeText {
+        width: 100%;
+    }
+    .ReadAllReview .breadcrumb {
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+}

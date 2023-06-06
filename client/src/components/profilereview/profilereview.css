@@ -1,0 +1,41 @@
+.ProfileReview {
+    margin-top: 25px;
+}
+
+.reviewOn, .reviewBox {
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    padding: 10px 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.reviewBox {
+    border-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 4px;
+}
+
+.revTitle {
+    font-size: 20px;
+    color: #000;
+}
+
+.profileRevDesc {
+    font-size: 15px;
+    color: rgba(36, 44, 67, 0.9);
+    margin-top: 10px;
+}
+
+@media (max-width:900px) {
+    .reviewpage .dFlex {
+        flex-direction: column;
+    }
+    .lBio, .reviewSidebar, .reviews {
+        width: 100%;
+    }
+    .reviewpage {
+        padding: 0 20px;
+    }
+}

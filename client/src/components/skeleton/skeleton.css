@@ -1,0 +1,87 @@
+.postSk {
+    width: 265px;
+    margin-right: 12px;
+    margin-bottom: 30px;
+    animation: skeleton 1s ease infinite alternate;
+  }
+  
+  
+  .postSkImg {
+      background-color: #c7c7c7;
+      width: 265px;
+      height: 153px;
+    }
+  
+    .postSkInfo {
+        display: flex;
+    margin-top: 15px;
+  }
+  
+  .postSkDetail {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .postSkText {
+    background-color: #c7c7c7;
+    width: 90%;
+    height: 20px;
+    margin-bottom: 5px;
+}
+  
+.trendSk, .catSk {
+    background-color: #c7c7c7;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 30px;
+    animation: skeleton 1s ease infinite alternate;
+}
+
+.listSk {
+    animation: skeleton 1s ease infinite alternate;
+    margin-bottom: 30px;
+}
+
+.listTopSk {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.leftSk {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #c7c7c7;
+}
+
+.rightSk {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titleSk, .rateSk {
+    background-color: #c7c7c7;
+    height: 20px;
+    width: 100%;
+}
+
+.rateSk {
+    width: 80%;
+}
+
+.aboutSk {
+    background-color: #c7c7c7;
+    height: 80px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@keyframes skeleton {
+  to {
+    opacity: 0.5;
+  }
+}

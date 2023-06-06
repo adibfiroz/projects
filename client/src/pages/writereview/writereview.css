@@ -1,0 +1,107 @@
+.writeReview {
+    background-color: #edf7ff;
+    height: 100vh;
+}
+
+.writeReview .navContainer {
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
+    transition: none;
+}
+
+.writeReview .dFlex {
+    margin: 50px 0;
+}
+
+.lsoftOn {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.lsoftOn img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.lsoftOn, .reviewForm {
+    flex: 1;
+}
+
+.writeTxt {
+    font-size: 20px;
+    color: #1859B4;
+    font-weight: bold;
+}
+
+.softtitle {
+    color: #000;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.formInput {
+    border: 0;
+    border-bottom: 1px solid #1859B4;
+    padding: 10px 15px;
+    font-size: 18px;
+    width: -webkit-fill-available;
+    outline: none;
+}
+
+.startxt {
+    font-size: 16px;
+    color: #000;
+    position: relative;
+    top: -8px;
+    margin-right: 10px;
+}
+.reviewForm .formText {
+    font-size: 16px;
+    margin: 10px 0;
+    margin-top: 30px;
+    color: #000;
+}
+
+textarea {
+    width: -webkit-fill-available;
+    height: 100px;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+    resize: vertical;
+    border: 0;
+    border-bottom: 1px solid #1859B4;
+}
+
+.reviewForm .writeText {
+    background: linear-gradient(to right, #1859B4 0%, #0467F1 100%);
+    position: relative;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 8px 15px;
+    font-size: 18px;
+    width: 212px;
+    height: 55px;
+}
+
+@media (max-width:900px) {
+    .writeReview .dFlex {
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px 0;
+    }
+    .lsoftOn img {
+        width: 90px;
+        height: 90px;
+    }
+    .softtitle {
+        font-size: 20px;
+    }
+    .writeTxt {
+        font-size: 16px;
+    }
+}

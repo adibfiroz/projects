@@ -1,0 +1,101 @@
+.review {
+    display: flex;
+    gap: 20px;
+    border: 1px solid #ebe9e9;
+    border-bottom: 8px solid #ebe9e9;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+.lUser {
+    width: 20%;
+}
+
+.rUserReview {
+    width: 80%;
+    padding-right: 10px;
+}
+
+.lUser {
+    text-align: center;
+}
+
+.lUser img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.userName {
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.reviewTitle {
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+}
+
+.reviewStar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.reviewStar .starIcon {
+    font-size: 30px;
+}
+
+.desc {
+    font-size: 16px;
+    color: #242c43;
+    margin-top: 10px;
+}
+
+.likeReview {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.likeReview .thumbUp{
+    color: rgba(36,44,67,.7);
+    cursor: pointer;
+}
+
+.noReview {
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.noReview span {
+    color:  #1859B4;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width:900px) {
+    .review {
+        flex-direction: column;
+        padding: 0 20px;
+        padding-top: 20px;
+        margin: 20px;
+    }
+    .softReview {
+        padding: 0 20px;
+    }
+    .rUserReview, .lUser {
+        width: 100%;
+    }
+    .noReview {
+        padding: 20px;
+    }
+}

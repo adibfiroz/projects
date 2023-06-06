@@ -1,0 +1,19 @@
+.articleCard {
+    flex: 1;
+    border: 1px solid #e0e1e2;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.articleCard img {
+    height: 150px;
+    width: 100%;
+}
+
+.articleTitle {
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+    padding: 15px;
+    text-align: center;
+}

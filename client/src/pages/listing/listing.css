@@ -1,0 +1,154 @@
+.listBackImg {
+    height: 250px;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/24ed9392232693.5e45b4885aef5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.listContainer {
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.listTitle {
+    font-size: 40px;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.breadcrumb {
+    max-width: 1200px;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    padding: 0 20px;
+}
+
+.breadcrumb a {
+    color: #7d848b;
+}
+
+.sorting {
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 12%);
+    padding: 10px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sortFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sortSelect {
+    width: 200px;
+}
+
+.labelText {
+    background: #fff;
+    padding-right: 6px!important;
+}
+
+.softwareList {
+    padding: 20px;
+}
+
+.listFlex {
+    display: flex;
+    gap: 30px;
+}
+
+.lCard {
+    width: 70%;
+}
+
+.sidebar {
+    width: 30%;
+}
+
+.pagination {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar {
+    margin-top: 20px;
+}
+
+.buisness, .whyBB {
+    border: 1px solid #e0e1e2;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.txtBlue {
+    font-size: 20px;
+    color: #1859B4;
+    font-weight: bold;
+    margin-top: 10px;;
+}
+
+.buisness p, .whyBB p {
+    font-size: 16px;
+    color: #000;
+    margin: 20px 0;
+}
+
+.claimButton {
+    background: linear-gradient(to right, #1859B4 0%, #0467F1 100%);
+    color: #fff!important;
+    padding: 8px 20px!important;
+}
+
+.whyBB {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.whyBB p {
+    line-height: 28px;
+}
+
+@media (max-width:900px) {
+    .listBackImg {
+        height: 220px;
+    }
+    .listTitle {
+        font-size: 30px;        
+        width: -webkit-fill-available;
+        padding: 0 20px;
+    }        
+    .sortSelect {
+        width: 250px;
+    }
+    .sortFlex {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .sorting {
+        padding: 20px 20px;
+    }
+    .listContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+    }
+    .listContainer .breadcrumb {
+        margin: 0;
+        margin-top: 20px;
+    }
+}

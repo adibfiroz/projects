@@ -1,0 +1,152 @@
+.login {
+   background-color: #edf7ff;   
+   height: 100vh;
+}
+
+.itemCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 220px;
+    width: 220px;
+}
+
+.loginForm label {
+    color: #000;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.loginForm input {
+    background-color: #fff;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    padding: 15px;
+    width: -webkit-fill-available;
+    color: #000;
+    font-weight: 600;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    transition: 0.2s;
+}
+
+.loginForm input:focus {
+    transition: 0.2s;
+    border: 1px solid #0467F1;
+}
+
+.fpassword {
+    color: #000;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.itemCenter .submit {
+    background: linear-gradient(to right, #1859B4 0%, #0467F1 100%);
+    position: relative;
+    color: #fff;
+    border: none;
+    padding: 0px 12px;
+    cursor: pointer;
+    width: 100px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: auto;
+    height: 50px;
+}
+
+.login .registerBtn {
+    background: #000;
+    border: 1px solid #fff;
+    padding: 6px 12px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.login .registerBtn:hover {
+    border: 1px solid #000;
+    color: #000;
+}
+
+.itemCenter .dFlex {
+    align-items: center;
+}
+
+.Or {
+    font-size: 25px;
+    color: #000;
+    font-weight: bold;
+}
+
+.socialLogin {
+    background: #fff;
+    padding: 20px;
+    border-radius: 11px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.socialBtn {
+    background: linear-gradient(to right, #1859B4 0%, #0467F1 100%);
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.errorLogin {
+    color: red;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.eyeIcon {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    color: #1859B4;
+}
+
+.eyeIcon svg {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width:900px) {
+    .itemCenter .dFlex {
+        flex-direction: column;
+    }
+    .login .registerBtn {
+        margin-right: 20px;
+    }
+    .login {
+        padding-bottom: 20px;
+    }
+ 
+}

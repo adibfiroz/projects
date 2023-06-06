@@ -1,0 +1,230 @@
+.writeContainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.topFlex {
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.rImage, .lSearch {
+    flex: 1;
+}
+
+.lSearch h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #000;
+}
+
+.preSearch {
+    position: relative;
+    margin-top: 30px;
+}
+
+.preSearch input {
+    width: -webkit-fill-available;
+    padding: 15px;
+    padding-left: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #a7a7a7;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.preSearch input:focus {
+    border: 1px solid #0467F1;
+}
+
+.presearchicon {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: #555454;
+    font-size: 50px;
+}
+
+.preSearch ul {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    border-radius: 5px;
+    top: 55px;
+    margin: 0 15px;
+    overflow: hidden;
+    z-index: 8;
+    border: 1px solid #e0e1e2;
+}
+
+.preSearch li:not(:last-child) {
+    border-bottom: 1px solid #e0e1e2;
+}
+
+.preSearch ul li .searchItem {
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #000;
+    cursor: pointer;
+    display: block;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preSearch ul li .searchItem:hover {
+    background-color: #e0e1e2;
+}
+
+.redTxt {
+    color: #0467F1;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.rImage {
+    text-align: center;
+}
+
+.preSearch .notFound {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.bxshadowline {
+    border-top: 1px solid #e0e1e2;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.selectCat {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.selectCat h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.selectInput {
+    position: relative;
+}
+
+.selectInput input {
+    width: 600px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #a7a7a7;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.selectInput input:focus {
+    border: 1px solid #0467F1;
+}
+
+.popularList {
+    margin: 30px 0;
+}
+
+.popContainer {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.selectInput ul {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    border-radius: 6px;
+    top: 38px;
+    margin: 0 15px;
+    overflow: hidden;
+    z-index: 8;
+    max-height: 240px;
+    overflow-y: auto;
+}
+
+.selectInput ul li .catQuery {
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #000;
+    cursor: pointer;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.selectInput li:not(:last-child) {
+    border-bottom: 1px solid #e0e1e2;
+}
+
+.selectInput ul li .catQuery:hover {
+    background-color: #e0e1e2;
+}
+
+.selectInput ul::-webkit-scrollbar {
+    width: 8px;
+    height: 5px;
+}
+
+/* Track */
+.selectInput ul::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #f8f8f8;
+
+}
+
+/* Handle */
+.selectInput ul::-webkit-scrollbar-thumb  {
+    background: #3d6cb4; 
+    border-radius: 10px;
+}
+
+@media (max-width:900px) {
+    .topFlex {
+        flex-direction: column-reverse;
+        padding: 30px 20px;
+    }
+
+    .lSearch h2, .selectCat h2 {
+        font-size: 25px;
+    }
+    .lSearch {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .rImage img, .selectInput input {
+        width: 100%;
+    }
+    .selectCat {
+        padding: 0 20px;
+    }
+    .popContainer {
+        padding: 20px;
+    }
+    .selectInput input {
+        width: -webkit-fill-available;
+    }
+}

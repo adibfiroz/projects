@@ -1,0 +1,55 @@
+.register {
+    background-color: #edf7ff;      
+    min-height: 100vh;
+}
+
+.register .loginBtn {
+    background: #000;
+    border: 1px solid #fff;
+    padding: 6px 12px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.register .loginBtn:hover {
+    border: 1px solid #000;
+    color: #000;
+}
+
+.register .submit {
+    margin-top: 30px;
+    width: 100px;
+    padding: 5px 12px;
+}
+
+.errorMsg{
+    font-size: 12px;
+    padding: 5px;
+    color: red;
+    display: none;
+}
+
+.userRed {
+    font-size: 14px;
+    color: red;
+    text-align: center;
+    font-weight: 600;
+}
+
+input:invalid[focused="true"]{
+    border: 1px solid red;
+}
+
+input:invalid[focused="true"] ~ .errorMsg{
+    display: block;
+}
+
+@media (max-width:900px) {
+    .register .loginBtn {
+        margin-right: 20px;
+    }
+}

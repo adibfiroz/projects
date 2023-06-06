@@ -1,0 +1,410 @@
+.navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1160px;
+    width: 100%;
+    padding: 10px 20px;
+    margin: auto;
+    transition: 0.5s;
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+}
+
+.navSearch ul {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    border-radius: 10px;
+    top: 43px;
+    margin: 0 15px;
+    overflow: hidden;
+    z-index: 8;
+}
+
+.navSearch ul li a  {
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #000;
+    cursor: pointer;
+    display: block;
+}
+.navSearch .notFound {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.navSearch li:not(:last-child) {
+    border-bottom: 1px solid #e0e1e2;
+}
+
+.navSearch li:hover {
+    background-color: #ebebeb;
+}
+
+
+@keyframes mymove {
+    from {transform:translateY(-50%);}
+    to {transform: translateY(0%);}
+}
+
+
+.Lcontents, .Rcontents {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    color: #1859B4;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.headText {
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.deskNavbar .logo {
+    color: #00257b;
+}
+
+.deskNavbar.isSticky .headText {
+    color: #000;
+}
+
+
+.deskNavbar .writeText {
+    background: linear-gradient(to right, #1859B4 0%, #0467F1 100%);
+    position: relative;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    text-transform: capitalize;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.icon {
+    color: #000;
+}
+
+.modal  {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -250px;
+    background: #fff;
+    z-index: 10000;
+    transition: all 0.5s ease;
+}
+
+.modal.active {
+    left: 0;
+    transition: all 0.5s ease;
+}
+
+.backLayer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 9999;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.backLayer.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.scrollHide {
+    overflow: hidden;
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.modalContent .top a {
+    color: #000;
+}
+
+.modalContent ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+
+.menuIcon {
+    color: #1859B4;
+    margin-right: 10px;
+}
+
+.logout {
+    color: red;
+    margin-right: 10px;
+}
+
+.navSearch {
+    position: relative;
+}
+
+.navSearch input {
+    width:350px;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #7d848b;
+    outline: none;
+    color: #000;
+    padding-right: 45px;
+}
+
+.navSearch ul h1  {
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer;
+    display: block;
+}
+
+.navSearch ul li .cat {
+    color: #1859B4;
+    font-size: 12px;
+    padding-top: 0;
+    font-weight: 600;
+}
+
+.navSearch input:focus {
+    border: 1px solid #0467F1;
+}
+
+.naviconSearch {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    color: #877f7f;
+}
+
+.userprofile {
+    position: relative;
+    cursor: pointer;
+}
+
+.bellIcon {
+    color: #7d848b;
+}
+
+.userprofile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.userDropDown {
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    right: 0;
+    display: none;
+    opacity: 0;
+    z-index: 10;
+}
+
+.serachLogo {
+    width: 30px;
+    height: 20px;
+    float: right;
+    object-fit: cover;
+}
+
+.userDropDown a {
+    display: block;
+    padding: 5px 20px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.userprofile:hover .userDropDown {
+    display: block;
+    opacity: 1;
+}
+
+.userDropDown a:hover {
+    background-color: #ebebeb;
+}
+
+.Logout {
+    color: red!important;
+}
+
+.userSection {
+    background-color: #edf7ff;
+    padding: 20px;
+}
+
+.userSection img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.userMenu {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+@media (max-width:900px) {
+    .navContainer {
+        display: none;
+    }
+    .mContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    .css-11b3ww9-MuiPaper-root-MuiAppBar-root {
+        background-color: #fff!important;
+    }
+    .respNavbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: #fff;
+        box-shadow: 0 0 10px 0 rgb(0 0 0 / 35%);
+    }
+    .searchModal {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 15;       
+    } 
+    .resSearch {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+    }
+    .Rcontents {
+        gap: 10px;
+    }
+    .resSearch .searchIcons {
+        color: #000;
+        font-size: 25px;
+    }
+
+    .resSearch .searchIcons:first-child {
+        padding-left: 10px;
+    }
+    .resultText ul li a {
+        padding: 10px 20px;
+        display: block;
+        color: #000;
+        font-size: 16px;
+    }
+    .resultText ul {
+        padding-top: 10px;
+    }
+    .resultText ul .notFound  {
+        text-align: left;
+        padding: 10px 20px;
+        font-size: 15px;
+        color: #000;
+        font-weight: 500;
+        cursor: pointer;
+        display: block;
+    }
+    
+    .resultText ul li .cat {
+        color: #1859B4;
+        font-size: 12px;
+        padding-top: 0;
+        font-weight: 600;
+    }
+    .resSearch input {
+        background-color: #fff;
+        border: 0;
+        padding: 10px;
+        padding-right: 35px;
+        border-radius: 5px;
+        flex: 1;
+        outline: none;
+        font-size: 16px;
+    }
+    .shortLogo {
+        color: #1859B4;
+        font-size: 28px;
+        font-weight: bolder;
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+    .resSearch .searchIcons:last-child {
+        position: absolute;
+        right: 15px;
+    }
+    .resultText {
+        background: #ebebeb;
+        width: 100%;
+        height: 100vh;
+        border-top: 2px solid #1859B4;
+    }
+}
+
+@media (min-width:900px) {
+    
+    .navbar {
+        padding-top: 20px;
+    }
+
+    .deskNavbar.isSticky {    
+        background-color: #fff;
+        position: fixed;
+        top: 0; 
+        left: 0;
+        right: 0;
+        z-index: 50;
+        animation: mymove 500ms;
+        box-shadow: 0 0 10px 0 rgb(0 0 0 / 12%);
+    }
+    .respNavbar {
+        display: none;
+    }
+   
+}

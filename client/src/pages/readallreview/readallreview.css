@@ -1,0 +1,376 @@
+
+.ReadAllReview .navContainer {
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
+    transition: none;
+}
+
+.deskNavbar.isSticky .navContainer {
+    box-shadow: none;
+}
+.ReadAllReview .breadcrumb span {
+    color: #000;
+}
+
+.ReadAllReview .arrowIcon {
+    color: #000;
+}
+.ReadAllReview .breadcrumb {
+    padding: 20px 0;
+}
+
+.tabList {
+    border: solid 1px rgba(0,90,180,.5);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    position: sticky;
+    top: 70px;
+    z-index: 8;
+    background: #fff;
+}
+
+.tabList a {
+    padding: 10px;
+    color: #000;
+    font-size: 16px;
+}
+
+.tabList a.active {
+    border-bottom: solid 4px #1859B4;
+    color: #1859B4;
+    font-weight: bold;
+}
+
+.lDetials {
+    width: 60%;
+}
+
+.rPhoto {
+    width: 40%;
+}
+
+.imgGallery img {
+    max-width: 148px;
+    min-width: 148px;
+    height: 120px;
+    flex: 1;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.softwareDetails {
+    margin-top: 30px;
+}
+
+.imgGallery {
+    border: solid 1px rgba(0,90,180,.5);
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.slider{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+  
+  .sliderWrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .sliderImg{
+    width: 80%;
+    height: 80vh;
+    object-fit: contain;
+}
+  
+  .close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: lightgray;
+    cursor: pointer;
+}
+  
+  .arrow{
+    margin: 20px;
+    font-size: 50px;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.scrollHide {
+    overflow: hidden;
+}
+.scrollHide {
+    overflow: hidden;
+}
+
+.pricing {
+    font-size: 18px;
+    color: #000;
+    background-color: #edf7ff;
+    border-radius: 10px;
+    padding: 15px;
+    border: solid 1px rgba(151,151,151,.3);
+}
+
+.price {
+    margin-top: 20px;
+}
+
+.pricing span {
+    color: #1859B4;
+    font-weight: bold;
+}
+
+.softSupport {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.supportCard .checkIcon {
+    font-size: 20px;
+}
+
+.supportCard {
+    flex: 1;
+    padding: 15px;
+    background-color: #edf7ff;
+    border: solid 1px rgba(151,151,151,.3);
+    border-radius: 10px;
+}
+
+.supportCard h3 {
+    color: #1859B4;
+    font-weight: bold;
+}
+
+.supportCard ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #000;
+}
+
+.features {
+    background-color: rgba(137,198,255,.4);
+    padding: 50px 0;
+    margin: 50px 0;
+}
+
+.featureList ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.features h2 {
+    color: #000;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.featureList .checkIcon {
+    font-size: 20px;
+}
+
+.featureList ul li {
+    width: 285px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+    
+.softRating {
+    display: flex;
+    gap: 30px;
+}
+
+.lRatings {
+    width: 70%;
+}
+
+.rRatings {
+    width: 30%;
+}
+
+.softRating .dFlex {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lRatings h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+}
+
+.ratingBeakup, .innerRow {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.rateColor span {
+    flex: 1;
+    padding: 4px;   
+    background-color: #1859B4;
+    border: 1px solid #1859B4;
+}
+
+.rateColor .bg1 {
+    background-color: #d1d2d4;
+    border: 1px solid #d1d2d4;
+}
+
+.lBreak, .rBreak {
+    width: 50%;
+}
+
+.rateColor span:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.rateColor span:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.rateColor {
+    display: flex;
+    gap: 2px;
+    flex: 1;
+}
+
+.ratingBeakup {
+    align-items: flex-start;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e1e2;
+}
+
+.txtField {
+    width: 40%;
+}
+
+.innerRow {
+    margin: 10px 0;
+}
+
+.softReview {
+    margin: 20px 0;
+}
+
+.rRatings .buisness img {
+    width: 200px;
+    height: 130px;
+}
+
+@media (max-width:900px) {
+    .softwareDetails {
+        padding: 20px;
+        margin-top: 0;
+    }
+    .softwareDetails .dFlex {
+        flex-direction: column;
+    }
+    .lDetials, .rPhoto {
+        width: 100%;
+    }        
+    .tabList {
+        overflow: scroll;
+        border-radius: 0;
+        justify-content: flex-start;
+        margin-top: 0;
+        border-top: 0;
+       top: 57px;
+    }
+    .sliderImg {
+        width: 100%;
+        height: 40vh;
+    }
+    .arrow {
+        position: absolute;
+    }
+    .slider .arrow:last-child {
+        right: 0px;
+    }
+    .slider .arrow {
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .price {
+        padding: 0 20px;
+        margin-top: 0;
+    }
+    .softSupport {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .features h2 {
+        font-size: 25px;
+    }
+    .featureList {
+        padding: 0 20px;
+    }
+    .features {
+        margin: 20px 0;
+        padding: 30px 0;
+    }
+    .softRating .dFlex, .ratingBeakup, .softRating  {
+        flex-direction: column;
+    }
+    .lRatings, .lBreak, .rBreak, .rRatings {
+        width: 100%;
+    }
+
+    .rRatings .buisness {
+        margin: 0 20px;
+        margin-bottom: 30px;
+    }
+    .ratingBeakup {
+        padding: 20px;
+        gap: 0;
+    }
+    .softRating .dFlex {
+        padding: 0 20px;
+    }
+    .lRatings h2 {
+        font-size: 25px;
+    }
+    .txtField {
+        font-size: 11px;
+        color: #000;
+    }
+    .innerRow {
+        margin: 15px 0;
+    }
+    .rBreak .innerRow:first-child {
+        margin-top: 0;
+    }
+    .imgGallery img {
+        max-width: 100%;
+        width: 150px;
+    }
+}

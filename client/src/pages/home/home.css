@@ -1,0 +1,401 @@
+.backImg {
+    height: 600px;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/24ed9392232693.5e45b4885aef5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.home .navSearch {
+    display: none;
+}
+
+.homeContainer {
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.header {
+    text-align: center;
+    margin-top: 110px;
+}
+
+.header h1 {
+    font-size: 60px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header h3 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    margin: 25px 0;
+}
+
+.headSearch {
+    position: relative;
+    width: 480px;
+    margin: auto;
+}
+
+.headSearch input {
+    border-radius: 30px;
+    padding: 18px 20px;
+    border: 0;
+    outline: none;
+    background-color: #fff;
+    width: -webkit-fill-available;
+    font-size: 16px;
+}
+
+.headSearch ul {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    border-radius: 10px;
+    top: 60px;
+    margin: 0 15px;
+    overflow: hidden;
+    z-index: 8;
+}
+
+.headSearch ul li a, .headSearch ul h1  {
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer;
+    display: block;
+}
+
+.headSearch li:not(:last-child) {
+    border-bottom: 1px solid #e0e1e2;
+}
+
+.headSearch li:hover {
+    background-color: #ebebeb;
+}
+
+.headSearch ul li .cat {
+    color: #1859B4;
+    font-size: 12px;
+    padding-top: 0;
+    font-weight: 600;
+}
+
+.headSearch span {
+    position: absolute;
+    right: 6px;
+    padding: 10px 11px;
+    background-color: #1859B4;
+    border-radius: 30px;
+    top: 6px;
+}
+
+.headSearch .notFound {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.search {
+    color: #fff;
+    vertical-align: middle;
+}
+
+.explore {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    padding: 50px 20px;
+    margin-top: -125px;
+}
+
+.exploreCard {
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 12%);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+}
+
+.exploreCard img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.exploreCard p {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.exploreCard button {
+    background: linear-gradient(to right, #1859B4 0%, #0467F1 100%);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    position: relative;
+    border-radius: 25px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+.popular {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.popular h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.popular h3::after {
+    content: '';
+    position: absolute;
+    background: #1859B4;
+    width: 80px;
+    height: 4px;
+    bottom: -12px;
+    left: 0;
+}
+
+.popularCard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.trend {    
+    padding: 30px 20px;
+    margin: 50px 0;
+    background: linear-gradient(to right, #1859B4 0%, #0467F1 100%);
+}
+
+.trendConatiner {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.dFlex {
+    display: flex;
+    gap: 30px;
+}
+
+.trendBox, .sellBox {
+    width: 50%;
+}
+
+.trend h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.trend img {
+    width: 550px;
+    height: 450px;
+}
+
+.categoryTitle {
+    font-size: 18px;
+    color: #fff;
+    padding: 15px;
+    padding-left: 0;
+    border-bottom: 1px solid #64a6e7;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.trendBox .categoryTitle:last-child {
+    border: 0;
+}
+
+.topArticle {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+.topArticle h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.article {
+    display: flex;
+    gap: 30px;
+}
+
+.selling {
+    background-color: #e3e3e3;
+    margin-top: 50px;
+}
+
+.sellContainer {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.sellBox img {
+    width: 550px;
+    height: 450px;
+}
+
+.sellBox  h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;    
+}
+
+.sellBox h4 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #000;    
+}
+
+.sellBox h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;    
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.claim {
+    background: linear-gradient(to right, #1859B4 0%, #0467F1 100%);
+    padding: 10px 20px!important;
+    width: fit-content;
+    color: #fff!important;
+}
+
+.gTop {
+    position: fixed!important;
+    bottom: -50px;
+    right: 20px;
+    transition: 0.8s;
+    background: #0467F1;
+    border-radius: 50%;
+    padding: 8px 11px;
+}
+
+.gTop.show {
+    bottom: 40px;
+    transition: 0.8s;
+    background: #0467F1;
+    border-radius: 50%;
+    padding: 8px 11px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 25%);
+}
+
+.arrowUp {
+    color: #fff!important;
+}
+
+.gTop.show:hover {
+    background: #0467F1;
+}
+@media (max-width:900px) {
+    .header  {
+        padding: 0 20px;
+        padding-top: 40px;
+        margin-top: 0;
+    }
+    .header h1 {
+        font-size: 30px;        
+    }
+    .header h3 {
+        font-size: 16px;        
+    }
+    .headSearch {
+        width: 100%;
+    }
+    .backImg {
+        height: 405px;    
+        background-position: top;  
+    }
+    .explore {       
+        flex-wrap: wrap;
+    } 
+    .popularCard, .article {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        padding-bottom: 10px;
+    }
+    .card {
+        width: 240px;
+    }
+    .popular h3, .trend h3, .topArticle h3, .sellBox h3 {
+        font-size: 25px;
+    }
+    /* width */
+    .popularCard::-webkit-scrollbar, .article::-webkit-scrollbar{
+        width: 8px;
+        height: 5px;
+    }
+    
+    /* Track */
+    .popularCard::-webkit-scrollbar-track, .article::-webkit-scrollbar-track{
+        border-radius: 10px;
+        background-color: #f8f8f8;
+    
+    }
+    
+    /* Handle */
+    .popularCard::-webkit-scrollbar-thumb ,.article::-webkit-scrollbar-thumb {
+        background: #3d6cb4; 
+        border-radius: 10px;
+    }
+    .hide {
+        display: none;
+    }
+    .trendBox {
+        width: 100%;
+    }
+    .categoryTitle {
+        margin-left: 0;
+    }
+    .articleCard {
+        min-width: 300px;
+    }
+    .sellBox img {
+        width: 100%;
+        height: 300px;
+    }
+    .selling .dFlex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sellBox {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+}

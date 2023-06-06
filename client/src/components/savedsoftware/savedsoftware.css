@@ -1,0 +1,78 @@
+.savedsoftware {
+    border: 1px solid #e0e1e2;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.savedsoftware .dFlex {
+    padding: 20px;
+    align-items: center;
+}
+
+.savedsoftware .softTitle {
+    font-size: 20px;
+}
+
+.savedsoftware .starIcon {
+    font-size: 35px;
+}
+
+.savedsoftware .reviewCount {
+    margin-left:  15px;
+}
+
+.savedsoftware .profileRevDesc {
+    border-top: 1px solid #e0e1e2;
+    padding: 20px;
+}
+
+.lsoftImg img {
+    width: 90px;
+    height: 90px;
+}
+
+.delete {
+    position: absolute;
+    right: 20px;
+    color: #1859B4;
+    top: 20px;
+    cursor: pointer;
+}
+
+.notSave {
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+
+@media (max-width:900px) {
+    .savedbox {
+        padding: 20px;
+        position: relative;
+    }
+    .savedbox .dFlex {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .savedsoftware .starIcon {
+        font-size: 25px;
+    }
+    .savedsoftware .softTitle {
+        left: 110px;
+        font-size: 20px;
+        position: absolute;
+        top: 45px;
+        right: 20px;
+        font-weight: bold;
+    }
+    .savedbox .dFlex {
+        align-items: flex-start;
+    }
+    .lsoftImg img {
+        width: 70px;
+        height: 70px;
+    }
+}
